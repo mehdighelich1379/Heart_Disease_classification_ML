@@ -4,5 +4,4 @@ scikit-learn
 seaborn
 pickle
 matplotlib
-catboost
 imbalance-learn
