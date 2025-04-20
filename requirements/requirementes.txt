@@ -1,8 +1,0 @@
-pandas
-numpy
-sklearn
-seaborn
-pickle
-matplotlib
-catboost
-imbalance-learn
