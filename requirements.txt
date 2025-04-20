@@ -1,5 +1,9 @@
-pandas
-numpy
+pandas=2.2.3
+numpy=2.2.5
 scikit-learn
 rich
 markdown-it-py
+seaborn==0.13.2
+matplotlib
+catboost
+imbalance-learn
