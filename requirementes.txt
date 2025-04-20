@@ -1,7 +1,0 @@
-pandas
-numpy
-scikit-learn==1.3.2
-seaborn
-pickle
-matplotlib
-imbalance-learn
