@@ -4,7 +4,7 @@ import pandas as pd
 
 
 
-with open('svc_model.txt', 'rb') as model_file:
+with open('svc_Model.txt', 'rb') as model_file:
     model = pickle.load(model_file)
 st.write("Enter the details for prediction:")
 
