@@ -2,7 +2,6 @@ pandas
 numpy
 scikit-learn
 seaborn
-pickle
 matplotlib
 catboost
 imbalance-learn
