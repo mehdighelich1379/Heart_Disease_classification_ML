@@ -6,3 +6,5 @@ pickle
 matplotlib
 catboost
 imbalance-learn
+rich
+markdown-it-py
