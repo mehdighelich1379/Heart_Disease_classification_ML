@@ -43,7 +43,7 @@ prob = model.predict_proba(user_input)[0][1]
 st.sidebar.write(f"Probability of Heart Disease: {prob:.2f}")
 
 if st.button("Predict"):
-    if probs >= 0.5:
+    if prob >= 0.5:
         st.error("The patient has a high probability of having heart disease.")
     else:
         st.success("The patient has a low probability of having heart disease.")
