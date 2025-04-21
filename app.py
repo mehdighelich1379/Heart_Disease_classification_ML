@@ -7,7 +7,7 @@ import streamlit as st
 st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-Dangerous10.jpg' , use_container_width=True)
 
 
-with open('catboost_model.txt', 'rb') as model_file:
+with open('svc_Model.txt', 'rb') as model_file:
     model = pickle.load(model_file)
 st.sidebar.header("Enter the details for prediction:🔍")
 
