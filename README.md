@@ -1,5 +1,26 @@
 ### Heart Disease Prediction Project using heart.csv Dataset
 
+# Heart Disease Prediction App
+
+This is a machine learning web app to predict heart disease based on patient input data.
+
+🔗 Live Demo: [Click here to use the app]([https://heart-disease-ml-mehdighelich.streamlit.app](https://heart-disease-classification-ml-mehdighelich.streamlit.app))
+
+📷 App Preview:
+
+![App Screenshot](images/heart_app_screenshot.jpg)  <!-- این مسیر باید با اسم فایلت یکی باشه -->
+
+Try the Live App https://heart-disease-classification-ml-mehdighelich.streamlit.app
+
+
+# Heart Disease Prediction
+This is a machine learning model to predict heart disease based on patient data. You can interact with the app directly here:
+
+
+
+
+
+
 #### Dataset Overview:
 The heart.csv dataset contains a variety of medical attributes that are used to predict whether a person has heart disease. The dataset consists of the following columns:
 
