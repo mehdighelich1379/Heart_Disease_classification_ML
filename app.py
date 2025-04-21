@@ -2,11 +2,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+import streamlit as st
+
+st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-Dangerous10.jpg', use_column_width=True)
 
 
 with open('catboost_model.txt', 'rb') as model_file:
     model = pickle.load(model_file)
-st.sidebar.header("Enter the details for prediction:")
+st.sidebar.header("Enter the details for prediction:🔍")
 
 age = st.sidebar.number_input("inter your age", min_value=0, max_value=100, value=0)
 sex = st.sidebar.number_input("inter your sex", min_value=0, max_value=1, value=0)
