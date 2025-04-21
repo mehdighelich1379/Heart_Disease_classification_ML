@@ -40,12 +40,13 @@ user_input = pd.DataFrame({
     'thal': [thal]
 })
 
-probs = model.predict_proba(user_input)[0][1]
-
-st.sidebar.write(f"Probability of Heart Disease: {probs:.2f}")
+probs = model.predict_proba(user_input)[0]
+idx_class_1 = list(model.classes_).index(1)
+prob_heart_disease = probs[idx_class_1]
+st.sidebar.write(f"Probability of Heart Disease: {prob_heart_disease:.2f}")
 
 if st.button("Predict"):
-    if probs >= 0.5:
+    if prob_heart_disease >= 0.5:
         st.error("The patient has a high probability of having heart disease.")
     else:
         st.success("The patient has a low probability of having heart disease.")
