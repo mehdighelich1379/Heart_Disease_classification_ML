@@ -6,7 +6,8 @@ import streamlit as st
 
 st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-Dangerous10.jpg' , use_container_width=True)
 
-
+with open('scaler.txt', 'rb') as file:
+    scaler = pickle.load(file)
 with open('catboost_model.txt', 'rb') as model_file:
     model = pickle.load(model_file)
 st.sidebar.header("Enter the details for prediction:🔍")
@@ -39,6 +40,7 @@ user_input = pd.DataFrame({
     'ca': [ca],
     'thal': [thal]
 })
+user_input = scaler.transform(user_input)
 prob = model.predict_proba(user_input)[0][1]
 st.sidebar.write(f"Probability of Heart Disease: {prob:.2f}")
 
