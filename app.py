@@ -39,8 +39,8 @@ user_input = pd.DataFrame({
     'ca': [ca],
     'thal': [thal]
 })
-probs = model.predict_proba(user_input)[0][1]
-st.sidebar.write(f"Probability of Heart Disease: {probs:.2f}")
+prob = model.predict_proba(user_input)[0][1]
+st.sidebar.write(f"Probability of Heart Disease: {prob:.2f}")
 
 if st.button("Predict"):
     if probs >= 0.5:
