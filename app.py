@@ -41,6 +41,7 @@ user_input = pd.DataFrame({
 })
 
 prob = model.predict_proba(user_input)[0][1]
+prob = 1 - prob
 
 st.sidebar.write(f"Probability of Heart Disease: {prob:.2f}")
 
