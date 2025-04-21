@@ -49,3 +49,41 @@ if st.button("Predict"):
         st.error("The patient has a high probability of having heart disease.")
     else:
         st.success("The patient has a low probability of having heart disease.")
+
+st.markdown("### Doctor AI Analysis")
+
+analysis = ""
+
+# Cholesterol
+if chol > 240:
+    analysis += "- High cholesterol level detected. Consider dietary and lifestyle adjustments.\n"
+else:
+    analysis += "- Cholesterol level is within a normal range.\n"
+
+# Resting Blood Pressure
+if trestbps > 140:
+    analysis += "- Elevated resting blood pressure. Monitor regularly and consult a physician.\n"
+else:
+    analysis += "- Resting blood pressure appears to be normal.\n"
+
+# Exercise Induced Angina
+if exang == 1:
+    analysis += "- Exercise-induced angina reported. This may indicate underlying heart issues.\n"
+else:
+    analysis += "- No signs of angina during exercise — a positive sign.\n"
+
+# Maximum Heart Rate Achieved
+if thalach < 100:
+    analysis += "- Low maximum heart rate. This could suggest a limitation in cardiac output.\n"
+elif thalach > 140:
+    analysis += "- Good heart rate response during physical activity.\n"
+else:
+    analysis += "- Heart rate is moderate. Further assessment may be needed based on other indicators.\n"
+
+# Oldpeak (ST depression)
+if oldpeak > 2:
+    analysis += "- Significant ST depression observed, which may reflect ischemic changes.\n"
+else:
+    analysis += "- ST depression is within a safe range.\n"
+
+st.info(analysis)
