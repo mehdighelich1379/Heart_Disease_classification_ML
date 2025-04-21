@@ -4,7 +4,7 @@ import pandas as pd
 
 import streamlit as st
 
-st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-Dangerous10.jpg', use_column_width=True)
+st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-Dangerous10.jpg' , use_container_width=True)
 
 
 with open('catboost_model.txt', 'rb') as model_file:
