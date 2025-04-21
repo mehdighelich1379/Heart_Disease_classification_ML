@@ -39,7 +39,7 @@ user_input = pd.DataFrame({
     'ca': [ca],
     'thal': [thal]
 })
-
+st.write('model classes:' , model.classes_)
 probs = model.predict_proba(user_input)[0]
 idx_class_1 = list(model.classes_).index(1)
 prob_heart_disease = probs[idx_class_1]
