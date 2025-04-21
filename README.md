@@ -4,13 +4,12 @@
 
 This is a machine learning web app to predict heart disease based on patient input data.
 
-🔗 Live Demo: [Click here to use the app]([https://heart-disease-ml-mehdighelich.streamlit.app](https://heart-disease-classification-ml-mehdighelich.streamlit.app))
+🔗 Live Demo: Click here to use the app https://heart-disease-classification-ml-mehdighelich.streamlit.app
 
 📷 App Preview:
 
-![App Screenshot](images/heart_app_screenshot.jpg)  <!-- این مسیر باید با اسم فایلت یکی باشه -->
+Screenshot 2025-04-21 144047.png
 
-Try the Live App https://heart-disease-classification-ml-mehdighelich.streamlit.app
 
 
 # Heart Disease Prediction
