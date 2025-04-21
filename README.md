@@ -8,7 +8,7 @@ This is a machine learning web app to predict heart disease based on patient inp
 
 📷 App Preview:
 
-![App Screenshot](heart_app_screenshot.png)
+![App Screenshot](heart_app_screenshot%20(2).png)
 
 
 
