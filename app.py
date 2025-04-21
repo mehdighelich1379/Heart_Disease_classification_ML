@@ -39,7 +39,6 @@ user_input = pd.DataFrame({
     'ca': [ca],
     'thal': [thal]
 })
-st.write('model classes:' , model.classes_)
 probs = model.predict_proba(user_input)[0][1]
 st.sidebar.write(f"Probability of Heart Disease: {probs:.2f}")
 
