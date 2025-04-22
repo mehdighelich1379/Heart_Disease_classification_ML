@@ -23,7 +23,7 @@ exang = st.sidebar.number_input("Enter your exang", min_value=0, max_value=1, va
 oldpeak = st.sidebar.number_input("Enter your oldpeak", min_value=0.0, max_value=10.0, value=0.1)
 slope = st.sidebar.number_input("Enter your slope", min_value=0, max_value=2, value=0)
 ca = st.sidebar.number_input("Enter your ca", min_value=0, max_value=4, value=0)
-thal = st.sidebar.number_input("Enter your thal", min_value=0, max_value=8, value=0)
+thal = st.sidebar.number_input("Enter your thal", min_value=0, max_value=3, value=0)
 
 
 user_input = pd.DataFrame({
