@@ -8,7 +8,7 @@ st.image('https://www.darmankade.com/blog/wp-content/uploads/2019/12/Is-Thyroid-
 
 with open('scaler.txt', 'rb') as file:
     scaler = pickle.load(file)
-with open('./models/catboost_model.txt', 'rb') as model_file:
+with open('model.txt', 'rb') as model_file:
     model = pickle.load(model_file)
 st.sidebar.header("Enter the details for prediction:🔍")
 
